@@ -15,7 +15,7 @@
     <h2>Cadastro de Pessoa</h2>
     <div class="container">
         @Html.ActionLink("Cadastrar nova", "Create", new{ @class = "btn btn-default"})
-        <table class="table table-hover table-striped">
+        @*<table class="table table-hover table-striped">
             <tr>
                 <th>@Html.DisplayNameFor(model => model.Nome)</th>
                 <th>@Html.DisplayNameFor(model => model.Sobrenome)</th>
@@ -45,7 +45,13 @@
                     </tr>
                 }
             }
-        </table>
+        </table>*@
+
+        @foreach (var pessoa in Model)
+        {
+            @Html.Partial("_PessoaPartialView", pessoa);
+        }
+
     </div>
 </body>
 </html>
