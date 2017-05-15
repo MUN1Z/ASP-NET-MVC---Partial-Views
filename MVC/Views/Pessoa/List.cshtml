@@ -49,7 +49,12 @@
 
         @foreach (var pessoa in Model)
         {
-            @Html.Partial("_PessoaPartialView", pessoa);
+            @*var manipulado = Html.Partial("_PessoaPartialView", pessoa);
+            string div = "<div style='background-color: red'>{0}</div>";
+            MvcHtmlString result = new MvcHtmlString(string.Format(div, manipulado));
+
+            @result;*@
+            { Html.RenderPartial("_PessoaPartialView", pessoa);}
         }
 
     </div>

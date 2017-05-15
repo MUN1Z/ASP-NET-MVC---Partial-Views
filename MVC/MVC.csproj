@@ -241,6 +241,7 @@
     <Content Include="Views\Pessoa\List.cshtml" />
     <Content Include="Views\CarrinhoCompras\Index.cshtml" />
     <Content Include="Views\Pessoa\_PessoaPartialView.cshtml" />
+    <Content Include="Views\CarrinhoCompras\_Categorias.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

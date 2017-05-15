@@ -29,5 +29,17 @@ namespace MVC.Controllers
             
             return View(model);
         }
+
+        public PartialViewResult Categorias()
+        {
+            List<string> categorias = new List<string>()
+            {
+                "Animes",
+                "Mangas",
+                "Series"
+            };
+
+            return PartialView("_Categorias", categorias);
+        }
     }
 }
